@@ -27,7 +27,7 @@
                 <div class="thumbs">
                     <div class="prev" @click = "prevImage()"></div>
                     <div class="next" @click = "nextImage()"></div>
-                    <div class="thumb"
+                    <div class="thumb" @click = "thumbImage(indice)"
                         v-for="(miniatura, indice) in slides" 
                         :class="activeImage === indice ? `active` : ``" >
                             <img :src="miniatura.image" :alt="miniatura[activeImage]">

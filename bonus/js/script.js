@@ -61,6 +61,10 @@ createApp({
             if(this.activeImage < 0){
                 this.activeImage = this.slides.length - 1;
             }
+        },
+        // al click su una thumb, visualizzare in grande l’immagine corrispondente:
+        thumbImage(indice){
+            this.activeImage = indice
         }
     }
 
